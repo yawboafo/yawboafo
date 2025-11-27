@@ -401,18 +401,6 @@ img {
     animation-delay: 0.5s;
 }
 
-.card-5 {
-    top: 30%;
-    right: 5%;
-    animation-delay: 1.5s;
-}
-
-.card-6 {
-    bottom: 35%;
-    right: -5%;
-    animation-delay: 2.5s;
-}
-
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
