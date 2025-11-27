@@ -4,8 +4,8 @@
   "description": "Personal portfolio website for Yaw Koranteng Boafo - Engineering Manager, Mobile App Platform",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve -s . -l 3000",
-    "dev": "npx serve -s ."
+    "start": "serve -s . -l $PORT",
+    "dev": "serve -s ."
   },
   "keywords": [
     "portfolio",
@@ -14,5 +14,8 @@
     "mobile"
   ],
   "author": "Yaw Koranteng Boafo",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.5"
+  }
 }
