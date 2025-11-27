@@ -350,24 +350,41 @@ img {
 
 .hero-stats {
     display: flex;
+    align-items: center;
     gap: var(--spacing-xl);
     opacity: 0;
     animation: fadeInUp 0.6s ease-out 1.6s forwards;
+    flex-wrap: wrap;
 }
 
-.stat h3 {
-    font-size: 2rem;
-    font-weight: 700;
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.stat-number {
+    font-size: 2.25rem;
+    font-weight: 800;
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: var(--spacing-xs);
+    line-height: 1;
 }
 
-.stat p {
+.stat-label {
     color: var(--text-secondary);
     font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background: var(--border-color);
 }
 
 .hero-image {
@@ -1485,6 +1502,22 @@ section {
     
     .hero-cta {
         flex-direction: column;
+    }
+    
+    .hero-stats {
+        gap: var(--spacing-lg);
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .stat-divider {
+        display: none;
     }
     
     .hero-stats {
