@@ -317,7 +317,7 @@ img {
 .professional-photo {
     width: 100%;
     aspect-ratio: 1;
-    border-radius: var(--radius-xl);
+    border-radius: 50%;
     overflow: hidden;
     box-shadow: var(--shadow-xl);
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
@@ -393,6 +393,24 @@ img {
     bottom: 10%;
     right: 10%;
     animation-delay: 2s;
+}
+
+.card-4 {
+    top: 50%;
+    left: -15%;
+    animation-delay: 0.5s;
+}
+
+.card-5 {
+    top: 30%;
+    right: 5%;
+    animation-delay: 1.5s;
+}
+
+.card-6 {
+    bottom: 35%;
+    right: -5%;
+    animation-delay: 2.5s;
 }
 
 @keyframes float {
